@@ -3,7 +3,7 @@ import { Outlet } from 'react-router-dom'
 import Nav from '../Nav/Nav'
 
 const Root = () => {
-    return <div >
+    return <div className='container mx-auto' >
         <Nav />
         <Outlet />
     </div>
