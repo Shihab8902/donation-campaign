@@ -1,6 +1,7 @@
 import React from 'react'
 import { useLoaderData, useParams } from 'react-router-dom'
 import { setDataToLS } from '../../utilities/localStorage';
+import Swal from 'sweetalert2';
 
 const CardDetails = () => {
     const cards = useLoaderData();
@@ -14,7 +15,11 @@ const CardDetails = () => {
 
     const addDonation = () => {
         setDataToLS(selectedCard);
-        alert("Donation added");
+        Swal.fire({
+            title: "Added!",
+            text: "Donation added successfully!",
+            icon: "success"
+        })
     }
 
 
