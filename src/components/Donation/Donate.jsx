@@ -11,7 +11,6 @@ const Donate = ({ donation }) => {
         navigate(`/card/${id}`);
     }
 
-    console.log(donation)
     return <div style={{ backgroundColor: category_bg_color }} className='flex  flex-col md:flex-row pb-5 md:pb-0 gap-6 items-center rounded-lg'>
         <div className='h-[200px]'>
             <img className='h-full rounded-lg' src={image} alt="Image not found" />
